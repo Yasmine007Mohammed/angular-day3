@@ -1,0 +1,33 @@
+<section class="vh-100" style="background-color: #eee;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-lg-9 col-xl-7">
+        <div class="card rounded-3">
+          <div class="card-body p-4">
+
+            <h4 class="text-center my-3 pb-3">User Lists</h4>
+
+            <form class="row row-cols-lg-auto g-3 justify-content-center align-items-center mb-4 pb-2">
+              <div class="col-12">
+                <div class="form-outline">
+                  <input type="text" id="form1" class="form-control" placeholder="UserName" />
+                </div>
+              </div>
+
+              <div class="form-outline">
+                <input type="text" id="form1" class="form-control" placeholder="Email" />
+              </div>
+
+              <div class="col-12">
+                <button type="submit" class="btn btn-warning">Search</button>
+              </div>
+            </form>
+            <div *ngFor="let user of users" >
+              <app-user-card [userData]="user"></app-user-card>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

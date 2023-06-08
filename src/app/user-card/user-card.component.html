@@ -1,0 +1,9 @@
+<div class="card">
+  <div class="card-body">
+
+    <h4 class="card-title text-center">{{userData.userName}}</h4>
+    <p class="card-text text-center">{{userData.email}}</p>
+    <p class="card-text text-center">{{userData.phone}}</p>
+    <h3 class="card-text text-center" [ngStyle]="{color:userData.state == 'fail' ? 'red' : 'green'}">{{userData.state}}</h3>
+  </div>
+</div>
